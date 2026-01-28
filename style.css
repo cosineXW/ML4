@@ -1,0 +1,179 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#comments-div{
+    /* display: flex; */
+    display: none;
+    margin: 2vh;
+
+}
+
+.profile-img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+#bar{
+    width:100%;
+}
+
+#bar2{
+   color: blanchedalmond;
+    width:100%;
+    display:none;
+}
+
+#bar3{
+    padding: 3vw;
+     width:100%;
+     display:none;
+     font-family: "PingFang SC", "Noto Sans", sans-serif; 
+     font-size: 20px; 
+     color:black;
+ }
+ #loadingdiv{
+     width:100%;
+     display:none;
+ }
+
+ #loading{
+width: 100%;
+ }
+ 
+#headbar{
+    width:100%;
+
+}
+#headbar2{
+    width:100%;
+}
+
+#headbar3{
+    width:100%;
+   
+}
+
+#file-select {
+    /* background-color: aqua; */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    /* height: 25vh; */
+}
+
+#file-assets {
+    background-color: brown;
+    /* position: absolute; */
+    width: 30vw;
+    height: 30vw;
+    margin: auto;
+    
+    /* margin: auto; */
+}
+
+#file-input::-webkit-file-upload-button {
+    visibility:hidden;
+}
+
+#file-input {
+    /* background-color: rgb(42, 165, 140, ); */
+    position: absolute;
+    opacity: 0;
+
+    z-index: 1;
+
+    /* width: 100%;
+    height: 100%; */
+    width: 30vw;
+    height: 30vw;
+}
+
+#file-img {
+    position: absolute;
+
+    width: 30vw;
+    height: 30vw;
+}
+
+
+#comment-area {
+    /* background-color:red; */
+    /* padding-top: 2vh;
+    padding-bottom: 2vh; */
+    padding: 2vh;
+
+    height: 15vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-text {
+    width: 100%;
+    height: 100%;
+}
+
+#submit-btn-wrapper {
+    /* background-color:blueviolet; */
+   
+    height: 5vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit-btn {
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-family: "PingFang SC", "Noto Sans", sans-serif; 
+    border-radius: 15px; 
+    font-weight: bold;
+    cursor: pointer;
+    background-color:#3C9AFE
+}
+
+#input-text{
+    font-size: 20px; /* 设置字体大小为 16 像素 */
+    font-family: Arial, sans-serif; /* 设置字体 */
+}
+
+#comment-post-img {
+    width: 100%;
+}
+
+#comment-title{
+    text-align: center;
+    font-family: "PingFang SC", "Noto Sans", sans-serif; 
+    font-weight: bold;
+    font-size: 30px;
+    display:none;
+}
+<<<<<<< Updated upstream
+
+
+#file-input{
+    /* display: none; */
+=======
+.back-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8vw;
+    height: 5vh;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.back-button:hover {
+    background-color: #0056b3;
+>>>>>>> Stashed changes
+}

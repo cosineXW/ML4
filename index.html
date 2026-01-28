@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <title>BOTTERFLY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button class="back-button" onclick="window.location.href='https://cosinexw.github.io/ML4new/homepage'">←</button>
+
+  <div id="wrapper">
+
+    <div id="bar">
+      <img src="assets/bar.jpg" id="headbar">
+    </div>
+
+    <div id="bar2">
+      <img src="assets/bar2.jpg" id="headbar2">
+    </div>
+
+    <div>
+      <!--put user uploadimg here!!! -->
+    </div>
+
+    <div>
+      <!--put user uploadimg full screen and text!!! -->
+    </div>
+
+
+    <div id="loadingdiv">
+      <img src="assets/loading.gif" id="loading">
+    </div>
+
+    <div id="all">
+      <div id="file-select">
+        <div id="file-assets">
+          <!-- <input type="file" id="file-input" accept="image/png,image/jpeg" capture="filesystem"> -->
+          <input type="file" id="file-input" accept="image/*">
+          <img src="assets/camera.jpg" id="file-img">
+        </div>
+      </div>
+      <div id="comment-area">
+
+          <textarea name="input-text" placeholder="Write a caption or add a poll in any language you want..." id="input-text" rows="5"></textarea>
+
+      </div>
+      <div id="submit-btn-wrapper">
+        <input type="button" value="Share" id="submit-btn">
+      </div>
+    </div>
+
+    <div id="bar3">
+      <div id="comment-post">
+        <img id="comment-post-img">
+        <p id="comment-post-caption"></p>
+
+      </div>
+      <img src="assets/bar3.jpg" id="headbar3">
+    </div>
+
+    <div id="comment-title">
+      <p>COMMENTS</p>
+    </div>
+
+
+
+    <div id="comments-div">
+    </div>
+  </div>
+
+
+
+
+  <script src="index.js"></script>
+  <script src="comment.js"></script>
+  <script src="post.js"></script>
+  <script src="openai.js"></script>
+
+</body>
+
+</html>
