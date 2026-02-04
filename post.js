@@ -38,9 +38,9 @@ async function sendMessage() {
     dataUrl = uploadedImage.canvas.toDataURL();
   }
 
-  // 准备 Prompt
-  let messages = [];
-  let systemPrompt = "Imagine you are a netizen viewing others' posting text on social media. Now I want you to give comment on it like real people do. I need a list of 20 userIDs and comments. comments can be humorous or serious and positive or negative. The userID and the comment should be the same language as the user input. Respond as valid JSON without any prefix. Use the properties \"id\" and \"comment\" for each comment.";
+// 准备 Prompt
+let messages = [];
+let systemPrompt = "You are the AI citizen for a social media simulation game. Your goal is to generate 20 realistic ids and comments that reflect the DIVERSE and CHAOTIC nature of the real internet. Do NOT just generate nice comments. I need a mix of the following personas: 1. The Simp/Fan: Overly supportive, using emojis like heart and fire. 2. The Hater/Skeptic: Cynical, unimpressed, or thinks the post is fake/staged (Focus on the vibe/background/quality, DO NOT attack physical appearance/looks to avoid safety filters). 3. The Who Asked: Dismissive, acting like nobody cares. 4. The Bot/Spam: Randomly asking people to check their bio or crypto scams. 5. The Grammar Police: Correcting a small mistake in the caption (if any) or just being pedantic. IMPORTANT CONSTRAINTS: Safety First: You can be mean, snarky, or sarcastic, but DO NOT generate hate speech, racial slurs, or sexually explicit content. Focus: If roasting, roast the photo quality, the outfit choice, the background, or the cringe caption, NEVER the person's face or body. Language: Match the language of the user's input. Respond as valid JSON without any prefix. Use the properties \"id\" and \"comment\" for each comment.";
 
   if (uploadedImage) {
     messages = [
@@ -133,7 +133,3 @@ function pushInputToArray(input) {
 function draw() {
   // 空循环
 }
-
-// 【重要修改 3】删除了这里原有的 updateComments 函数
-// 因为你的 comment.js 里已经有一个写好的 updateComments 了
-// 如果这里不删，会覆盖掉那个能真正生成 HTML 的函数
