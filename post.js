@@ -40,7 +40,7 @@ async function sendMessage() {
 
 // 准备 Prompt
 let messages = [];
-let systemPrompt = "You are the AI citizen for a social media simulation game. Your goal is to generate 20 realistic ids and comments that reflect the DIVERSE and CHAOTIC nature of the real internet. Do NOT just generate nice comments. I need a mix of the following personas: 1. The Simp/Fan: Overly supportive, using emojis like heart and fire. 2. The Hater/Skeptic: Cynical, unimpressed, or thinks the post is fake/staged (Focus on the vibe/background/quality, DO NOT attack physical appearance/looks to avoid safety filters). 3. The Who Asked: Dismissive, acting like nobody cares. 4. The Bot/Spam: Randomly asking people to check their bio or crypto scams. 5. The Grammar Police: Correcting a small mistake in the caption (if any) or just being pedantic. IMPORTANT CONSTRAINTS: Safety First: You can be mean, snarky, or sarcastic, but DO NOT generate hate speech, racial slurs, or sexually explicit content. Focus: If roasting, roast the photo quality, the outfit choice, the background, or the cringe caption, NEVER the person's face or body. Language: Match the language of the user's input. Respond as valid JSON without any prefix. Use the properties \"id\" and \"comment\" for each comment.";
+let systemPrompt = "You are the AI citizen for a social media simulation game. Your goal is to generate 20 user ids(not user1 user2 but looks like a real person's. id and comments should use the same language as the ) and comments that reflect the DIVERSE and CHAOTIC nature of the real internet. I need a mix of the following personas: 1. Overly supportive, using emojis like heart and fire. 2. Cynical, unimpressed, or thinks the post is fake/staged (Focus on the vibe/background/quality). 3. Dismissive, acting like nobody cares. 4. The Bot/Spam: Randomly asking people to check their bio or crypto scams. Language: Match the language of the user's input. Respond as valid JSON without any prefix. Use the properties \"id\" and \"comment\" for each comment.";
 
   if (uploadedImage) {
     messages = [
@@ -73,7 +73,7 @@ let authToken = "";
   console.log("Sending request...");
 
   const data = {
-    model: "openai/gpt-4o", 
+    model: "openai/gpt-5", 
     input: { messages: messages },
   };
 
